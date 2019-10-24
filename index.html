@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Cache" content="no-cache">		
+		<title>技术部-同道伟业</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: "microsoft yahei";
+				box-sizing: border-box;
+				color:#ffe813;
+			}
+			html,body,#box{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background: black;
+				position: relative;
+			}
+			#box.white{
+				background: white;
+			}
+			#start{
+				width: 300px;
+				height: 100px;
+				text-align: center;
+				font-size: 60px;
+				color: red;
+				line-height: 100px;
+				position: absolute;
+				top: calc(50% - 50px);
+				left: calc(50% - 150px);
+				cursor: pointer;
+				z-index: 99;
+			}
+			.yellow{
+				color: #ffe813 !important;
+			}
+			.red{
+				color:red !important;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/numBack.css"/>
+		<link rel="stylesheet" type="text/css" href="css/text.css"/>
+		<link rel="stylesheet" type="text/css" href="css/imgShow.css"/>
+		<script src="js/jQuery2.0.js"></script>
+	</head>
+
+	<body>
+		<div id="box">
+			<div id="start" style="color:#ffe813 ">开始</div>
+			<audio src="music/all.mp3" preload="auto" id="mp3"></audio>
+			<!--背景数字流-->
+			<canvas id="numBack"></canvas>
+			<!--文字欢迎语-->
+			<div id="textBox">
+				<div class="text1 yellow">接下<span>来</span></div>
+				<div class="text2 yellow">你们眼前看到的是<i></i></div>
+				<div class="text3 yellow">你们眼前看到的是</div>
+				<div class="text4">
+					<span>技术部</span>
+					<span>今晚的</span>
+					<span>节目</span>
+				</div>
+				<div class="text5">
+					<span>我们有</span>
+					<span>我们的 </span>
+					<span> 风格和</span>
+					<span>STYLE</span>
+				</div>
+				<div class="text6">
+					<span>我</span>
+					<span>们</span>
+					<span>有</span>
+					<span>我</span>
+					<span>们</span>
+					<span>的</span>
+					<span> 风</span>
+					<span>格</span>
+					<span>和</span>
+					<span>STYLE</span>
+				</div>
+				<div class="text7">
+					<span>我们是一个</span>
+					<span class="red">有帅哥</span>
+					<span class="red">有美女</span>
+					<span class="red">欢乐</span>
+					<span class="red">火热</span>
+					<span class="red">阳光</span>
+					<span class="red">认真</span>
+					<span>活泼</span>
+					<span>逗比</span>
+					<span>炫酷</span>
+					<span>开心</span>
+					<span>激情</span>
+					<span>积极</span>
+					<span>专业的</span>
+					<span>团队</span>
+				</div>
+				<div class="text8 yellow">
+					最后
+				</div>
+				<div class="text9 yellow">
+					<span>技术部</span>
+					<span>祝大家</span>
+				</div>
+				<div class="text10 red">新年快乐</div>
+				<div class="text11 red">心想事成</div>
+				<div class="text12 red">万事如意</div>
+				<div class="text13 red">猪年大吉</div>
+				<div class="text14">
+					<div>
+						<span>财源广进</span>
+						<span>身体健康</span>
+					</div>
+					<div>
+						<span>工作顺利</span>
+						<span>幸福美满</span>
+						<span>鹏程万里</span>
+					</div>
+					<div>
+						<span>岁岁平安</span>
+						<span>阖家欢乐</span>
+					</div>
+					<div>
+						<span>工资×2</span>
+						<span>甜甜美美</span>
+					</div>
+					<div>
+						<span>青春常在</span>
+						<span>多福多寿</span>
+					</div>
+					<div>
+						<span>捷报频传</span>
+						<span>倾国倾城</span>
+						<span>万众瞩目</span>
+					</div>
+					<div>
+						<span>步步高升</span>
+						<span>年年有余</span>
+						<span>出入平安</span>
+					</div>
+					<div>
+						<span>蒸蒸日上</span>
+						<span>笑口常开</span>
+					</div>
+				</div>
+				<div class="text15">
+					<div>
+						<span>新的一年</span><span>祝你新年快乐</span>
+					</div>
+					<div>
+						<span>所有的期待都能实现！</span>
+					</div>
+					<div>
+						<span>所有的付出都能兑现！</span>
+					</div>
+					<div>
+						<span>许一个美好的心愿祝你新年快乐连连</span>
+					</div>
+					<div>
+						<span>送一份美妙的感觉祝你来年万事圆圆</span>
+					</div>
+					<div>
+						<span>送一份喜爱的礼物祝你微笑甜甜</span>
+					</div>
+					<div>
+						<span>苍茫的天涯是我的爱</span>
+					</div>
+					<div>
+						<span>绵绵的青山脚下花正开</span>
+					</div>
+					<div>
+						<span>新的一年</span><span>祝你新年快乐</span>
+					</div>
+					<div>
+						<span>所有的期待都能实现！</span>
+					</div>
+					<div>
+						<span>所有的付出都能兑现！</span>
+					</div>
+					<div>
+						<span>许一个美好的心愿祝你新年快乐连连</span>
+					</div>
+					<div>
+						<span>送一份美妙的感觉祝你来年万事圆圆</span>
+					</div>
+					<div>
+						<span>送一份喜爱的礼物祝你微笑甜甜</span>
+					</div>
+					<div>
+						<span>什么样的节奏是最呀最摇摆</span>
+					</div>
+					<div>
+						<span>什么样的歌声才是最开怀</span>
+					</div>
+					<div>
+						<span>新的一年</span><span>祝你新年快乐</span>
+					</div>
+					<div>
+						<span>所有的期待都能实现！</span>
+					</div>
+					<div>
+						<span>所有的付出都能兑现！</span>
+					</div>
+					<div>
+						<span>许一个美好的心愿祝你新年快乐连连</span>
+					</div>
+					<div>
+						<span>送一份美妙的感觉祝你来年万事圆圆</span>
+					</div>
+					<div>
+						<span>送一份喜爱的礼物祝你微笑甜甜</span>
+					</div>
+					<div>
+						<span>苍茫的天涯是我的爱</span>
+					</div>
+					<div>
+						<span>绵绵的青山脚下花正开</span>
+					</div>
+					<div>
+						<span>新的一年</span><span>祝你新年快乐</span>
+					</div>
+					<div>
+						<span>所有的期待都能实现！</span>
+					</div>
+					<div>
+						<span>所有的付出都能兑现！</span>
+					</div>
+					<div>
+						<span>许一个美好的心愿祝你新年快乐连连</span>
+					</div>
+					<div>
+						<span>送一份美妙的感觉祝你来年万事圆圆</span>
+					</div>
+					<div>
+						<span>送一份喜爱的礼物祝你微笑甜甜</span>
+					</div>
+					<div>
+						<span>什么样的节奏是最呀最摇摆</span>
+					</div>
+					<div>
+						<span>什么样的歌声才是最开怀</span>
+					</div>
+					<div>
+						<span>新的一年</span><span>祝你新年快乐</span>
+					</div>
+					<div>
+						<span>所有的期待都能实现！</span>
+					</div>
+					<div>
+						<span>所有的付出都能兑现！</span>
+					</div>
+					<div>
+						<span>许一个美好的心愿祝你新年快乐连连</span>
+					</div>
+					<div>
+						<span>送一份美妙的感觉祝你来年万事圆圆</span>
+					</div>
+					<div>
+						<span>送一份喜爱的礼物祝你微笑甜甜</span>
+					</div>
+					<div>
+						<span>苍茫的天涯是我的爱</span>
+					</div>
+					<div>
+						<span>绵绵的青山脚下花正开</span>
+					</div>
+					<div>
+						<span>什么样的节奏是最呀最摇摆</span>
+					</div>
+					<div>
+						<span>什么样的歌声才是最开怀</span>
+					</div>
+				</div>
+				<div class="text16 yellow">
+					最后
+				</div>
+				<div class="text17 yellow">
+					最后的最后
+				</div>
+				<div class="text18 yellow">
+					让我们
+				</div>
+				<div class="text19 yellow">
+					让我们开始吧！
+				</div>
+			</div>
+			
+			
+			<!-- 照片集 -->
+			<div id="imgBox">
+				<!--<div class="pic pic0">
+					<div class="box">					
+						<div class="img">
+							<span style="background-image: url(img/new/dong_xue.jpg);"></span>
+							<span style="background-image: url(img/new/dong_xue.jpg);"></span>
+						</div>
+					</div>
+				</div>-->
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			//点击开始
+			$("#start").click(function () {
+				$(this).hide();
+				$("#mp3")[0].play();
+				textFn();
+			})
+						
+			//背景数字流
+			//numBackFn();
+			function numBackFn() {				
+				var width = $("#numBack").width();
+				var height = $("#numBack").height();
+				$("#numBack").attr("width",width).attr("height",height);
+				var yPositions = Array(200).join(0).split('');
+				var ctx = $("#numBack")[0].getContext('2d');
+				var draw = function() {
+					ctx.fillStyle = 'rgba(0,0,0,.05)';
+					ctx.fillRect(0, 0, width, height);
+					ctx.fillStyle = '#ffe100';
+					ctx.font = '14px Georgia';
+					yPositions.map(function(y, index) {
+						text = parseInt(Math.random()*2);
+						x = (index * 10) + 10;
+						$("#numBack")[0].getContext('2d').fillText(text, x, y);
+						if(y > Math.random() * height * 6) {
+							yPositions[index] = 0;
+						} else {
+							yPositions[index] = y + 11;
+						}
+					});
+				};
+				RunMatrix();
+				function RunMatrix() {
+					Game_Interval = setInterval(draw, 30);
+				}
+			}
+			
+			
+			//文字
+			//textFn();
+			function textFn(){
+				var timeArr=[4600,900,1100,1500,2000,2800,11000,900,1400,600,600,600,600,2500,2100,1000,400,400,900];
+				textMoveFn(0)
+				function textMoveFn(idx) {
+					if(idx < timeArr.length){						
+						var time = timeArr[idx];
+						if(idx===5){
+							setTimeout(function () {
+								backChangeFn(2,500)
+							},1900)							
+						}else if(idx===6){
+							text7(0);
+							setTimeout(function() {
+								$("#box").toggleClass("white");
+							},1200);
+							setTimeout(function() {
+								$("#box").toggleClass("white");
+							},5000);
+						}else if(idx===9 || idx===13 || idx===14 || idx===15){
+							$("#box").toggleClass("white");
+						}
+						$("#textBox>div").eq(idx).addClass("show").siblings().removeClass("show");
+						setTimeout(function () {
+							textMoveFn(idx + 1)
+						},time)
+					}else{
+						console.log('播放完毕');
+						setTimeout(imgShow,2000);
+					}
+				}				
+				//文字7函数
+				//text7(0);
+				function text7(idx) {
+					$("#textBox .text7 span").eq(idx).addClass("show").siblings().removeClass("show");
+					if (idx < 14) {
+						if (idx==0) {
+							var time = 1200;
+						}else{
+							var time = 600;
+						}
+						setTimeout(function () {
+							text7(idx + 1);
+						},time)
+					}
+				}
+				function backChangeFn(num,time) {//切换次数，总时长
+					var oneTime = Math.round(time/num);
+					var idx = setInterval(function () {
+						if(num - 1 >= 0){
+							num--;
+							$("#box").toggleClass("white")
+						}else{
+							clearInterval(idx)
+						}
+					},oneTime)
+				}
+			}
+			
+			//照片集
+			//imgShow();
+			function imgShow() {
+				var imgArr=[
+					['img/new/xiao.jpg','img/new/xiao_1.jpg'],
+					['img/new/haiting.jpg'],
+					['img/new/me.jpg'],
+					['img/new/haomeng.jpg'],
+					['img/new/yaya_1.jpg','img/new/yaya.jpg','img/new/yaya_2.jpg','img/new/yaya_3.jpg'],
+					['img/new/dongxue.jpg','img/new/dongxue_1.jpg'],
+					['img/new/pangyafei.jpg','img/new/pangyafei_1.jpg','img/new/pangyafei_2.jpg'],
+					['img/new/liuyi.jpg','img/new/liuyi_1.jpg'],
+					['img/new/lihuizhong.jpg'],
+					['img/new/chengxiangyang.jpg'],
+					['img/new/lijingjing.jpg'],
+					['img/new/panghuahong.jpg'],					
+					['img/new/wangyun.jpg'],
+					['img/new/wangshuaidong.jpg'],
+					['img/new/zhangpeng.jpg'],
+					['img/new/zhangshasha.jpg'],
+					['img/new/jiaqi.jpg'],
+					['img/new/zhiying.jpg'],
+					['img/new/hai_chao.jpg'],
+					['img/new/huasheng.jpg'],
+					['img/new/li_lei.jpg'],
+					['img/new/pangjunwei.jpg'],
+					['img/new/hao_yu.jpg'],
+					['img/new/zhou_tao.jpg'],
+					['img/jiti/00.jpg','img/jiti/01.jpg','img/jiti/02.jpg','img/jiti/03.jpg','img/jiti/04.jpg','img/jiti/05.jpg','img/jiti/06.jpg','img/jiti/07.jpg','img/jiti/07.jpg','img/jiti/08.jpg','img/jiti/09.jpg','img/jiti/10.jpg']
+				]
+				//铺数据
+				var divs=''
+				$(imgArr).each(function (idx) {
+					divs += '<div class="pic pic'+idx+'"><div class="box"><div class="img">'
+					$(this).each(function (idxs,that) {
+						divs += '<span style="background-image: url('+that+');"></span>'
+					})
+					divs += '</div></div></div>'
+				})
+				$("#imgBox").html(divs);
+				//存放位置
+				var numArr = [];
+				setTimeout(function () {
+					positionFn(0);
+				},1000)
+				function positionFn(idx) {
+					if(idx==0){
+						numArr = [];
+					}
+					if(idx < 6){
+						var topNum = Math.round(15);
+						var leftNum = Math.round(idx % 6 * 15 + 10);
+					}else if(idx < 12){
+						var topNum = Math.round(37);
+						var leftNum = Math.round(idx % 6 * 15 + 14);
+					}else if(idx < 18){
+						var topNum = Math.round(59);
+						var leftNum = Math.round(idx % 6 * 15 + 12);
+					}else{
+						var topNum = Math.round(81);
+						var leftNum = Math.round((idx-4) % 7 * 15 + 5);
+					}
+					var rotateNum = Math.round(Math.random() * 60 - 30);
+					numArr.push({
+						leftNum: leftNum,
+						topNum: topNum,
+						rotateNum: rotateNum
+					})
+					$("#imgBox .pic").eq(idx).css({
+						'left': 'calc(' + leftNum + '% - 90px)',
+						'top': 'calc(' + topNum + '% - 90px)',
+						'transform': 'rotate(' + rotateNum + 'deg)'
+					})
+					idx++;
+					if(idx < imgArr.length){
+						setTimeout(function () {
+							positionFn(idx)
+						},300)
+					}else{
+						//开始放大
+						setTimeout(function () {
+							bigFn(0)
+						},1000)
+					}
+				}				
+				//开始
+				/*setTimeout(function () {
+					bigFn(0)
+				},1000);*/
+				
+				//放大倍数
+				var bigSize = $("#imgBox").height() / 220;
+				function bigFn(idx) {
+					//放大
+					$("#imgBox .pic").eq(idx).css({
+						'left': 'calc(50% - 100px)',
+						'top': 'calc(50% - 100px)',
+						'box-shadow': '15px 15px 20px rgba(50, 50, 50, 0.4)',
+						'transform': 'rotate(0deg) scale('+bigSize+')',
+						'z-index': '1000'
+					});
+					//图片滑动
+					transX(0)
+					function transX(imgIdx) {
+						setTimeout(function () {
+							if(imgArr[idx].length - 1 > imgIdx){								
+								$("#imgBox .pic .img").eq(idx).css({
+									'left':-100*(imgIdx+1) +'%'
+								})
+								transX(imgIdx + 1);
+							}else{
+								//复原
+								var leftNum = numArr[idx].leftNum;
+								var topNum = numArr[idx].topNum;
+								var rotateNum = numArr[idx].rotateNum;
+								$("#imgBox .pic").eq(idx).css({
+									'left': 'calc(' + leftNum + '% - 100px)',
+									'top': 'calc(' + topNum + '% - 100px)',
+									'box-shadow': '2px 2px 3px rgba(50, 50, 50, 0.4)',
+									'transform': 'rotate(' + rotateNum + 'deg) scale(1)',
+									'z-index': '1'
+								});
+								
+								$("#imgBox .pic .img").eq(idx).css({
+									'left':'0'
+								})
+								if (idx < ($("#imgBox .pic").length - 1)) {
+									bigFn(idx+1);
+								}else{
+									//重新打乱位置
+									//positionFn(0);
+									//从头开始
+									bigFn(0);
+								}
+							}
+						},3000)	
+					}
+				}
+			}
+		</script>
+	</body>
+
+</html>

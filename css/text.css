@@ -1,0 +1,350 @@
+#textBox{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+#textBox>div{
+	font-size: 90px;
+	color: white;
+	display: none;
+}
+#box.white #textBox>div{
+	color: black;
+	font-weight: bold;
+}
+#textBox>div.show{
+	display: block;
+}
+#textBox>div.text1.show span{
+	animation: text1 steps(1) 1.5s 3s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text2{
+	position: relative;
+}
+#textBox>div.text2 i{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: black;
+	animation: text2 .8s linear;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text3{
+	font-size: 160px;
+	animation: text3 1s linear;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text4 span{
+	opacity: 0;
+}
+#textBox>div.text4 span:nth-child(1){
+	animation: text4 .6s linear;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text4 span:nth-child(2){
+	animation: text4 .6s linear .4s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text4 span:nth-child(3){
+	animation: text4 .6s linear .8s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text5.show,#textBox>div.text6.show{
+	display: flex;
+}
+#textBox>div.text5 span{
+	display: block;
+	opacity: 0;
+	transform: scale(2);
+}
+#textBox>div.text5 span:nth-child(1){
+	animation: text5 .6s linear;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text5 span:nth-child(2){
+	animation: text5 .6s linear .4s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text5 span:nth-child(3){
+	animation: text5 .6s linear .8s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text5 span:nth-child(4){
+	animation: text5 .6s linear 1.2s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span{
+	display: block;
+	opacity: 0;
+	transform: scale(5);
+}
+#textBox>div.text6 span:nth-child(1){
+	animation: text6 linear .6s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span:nth-child(2){
+	animation: text6 .6s linear .1s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span:nth-child(3){
+	animation: text6 .6s linear .2s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span:nth-child(4){
+	animation: text6 .6s linear .3s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span:nth-child(5){
+	animation: text6 .6s linear .4s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span:nth-child(6){
+	animation: text6 .6s linear .5s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span:nth-child(7){
+	animation: text6 .6s linear .6s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span:nth-child(8){
+	animation: text6 .6s linear .7s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span:nth-child(9){
+	animation: text6 .6s linear .8s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text6 span:nth-child(10){
+	animation: text6 .6s linear .9s;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text7 span{
+	display: none;
+	animation: text7 .6s linear;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text7 span:first-child{
+	animation: none;
+}
+#textBox>div.text7 span:last-child{
+	animation: text7_end 1s linear;	
+	animation-fill-mode: forwards;
+}
+#textBox>div.text7 span.show{
+	display: block;
+}
+#textBox>div.text8{
+	transform: scale(4);
+	animation: text5 .8s linear;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text9 span{
+	opacity: 0;
+}
+#textBox>div.text9 span:nth-child(1){
+	animation: text6 .8s linear;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text9 span:nth-child(2){
+	animation: text6 .8s linear .5s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text10,
+#textBox>div.text11,
+#textBox>div.text12,
+#textBox>div.text13{
+	opacity: 0;
+	transform: scale(4);
+	animation: text6 .5s linear;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text14 div{
+	display: flex;
+	line-height: 120px;
+	justify-content: center;
+	text-align: center;
+	height: 0;
+	overflow: hidden;
+}
+#textBox>div.text14 div span{
+	margin: 0 30px;
+}
+#textBox>div.text14 div:nth-child(1){
+	animation: text14 .2s linear;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text14 div:nth-child(2){
+	animation: text14 .2s linear .4s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text14 div:nth-child(3){
+	animation: text14 .2s linear .8s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text14 div:nth-child(4){
+	animation: text14 .2s linear 1.2s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text14 div:nth-child(5){
+	animation: text14 .2s linear 1.5s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text14 div:nth-child(6){
+	animation: text14 .2s linear 1.8s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text14 div:nth-child(7){
+	animation: text14 .2s linear 2s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text14 div:nth-child(8){
+	animation: text14 .2s linear 2.2s;
+	animation-fill-mode: forwards;
+}
+#textBox>div.text15{
+	text-align: center;
+	animation: text15 2s ease-in;
+}
+#textBox>div.text19{
+	animation: text19 .8s ease-in 1s;
+	animation-fill-mode: forwards;
+}
+
+/*字体变大*/
+@keyframes text1{
+	33%{
+		font-size: 130px;
+	}
+	66%{
+		font-size: 160px;
+	}
+	100%{
+		font-size: 190px;
+	}
+}
+/*宽度减小*/
+@keyframes text2{
+	0%{
+		width: 100%;
+	}
+	100%{
+		width: 0;
+	}
+}
+/*透明度显隐*/
+@keyframes text3{
+	0%{
+		opacity: 0;
+	}
+	20%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+/*透明度显隐*/
+@keyframes text4{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+/*渐显&大变小*/
+@keyframes text5{
+	0%{
+		opacity: .3;
+	}
+	60%{
+		opacity: 1;
+		transform: scale(1);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(1);
+	}
+}
+@keyframes text6{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes text7{
+	0%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: scale(6);
+	}
+}
+@keyframes text7_end{
+	0%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+		transform: scale(5);
+	}
+}
+/*高度展开*/
+@keyframes text14{
+	0%{
+		height: 0;
+	}
+	100%{
+		height: 120px;
+	}
+}
+/*满屏网上滚动*/
+@keyframes text15{
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(-1600px);
+	}
+}
+/*往左滚动*/
+@keyframes text19{
+	0%{
+		transform: translateX(0);
+	}
+	20%{
+		transform: translateX(80px);
+	}
+	30%{
+		transform: translateX(80px);
+	}
+	100%{
+		transform: translateX(-1600px);
+	}
+}
